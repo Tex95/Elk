@@ -5,7 +5,8 @@ The files in this repository were used to configure the network depicted below.
 (/Images/net_diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
-	install-elk.yml
+
+	[install-elk.yml](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -24,7 +25,8 @@ Load balancing ensures that the application will be highly available, in additio
 	Load balancers allow for high availability because they protect the system from DDoS and other attacks.
 	A Jump Box allows for managing the security of machines externally, hardening the overall system.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files on the machine and metrics.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files on the machine and metrics:
+
 	Filebeat - retrieves data about the file system.
 	Metricbeat - retrieves machine metrics, such as uptime.
 
