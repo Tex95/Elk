@@ -93,6 +93,7 @@ SSH into the control node and follow the steps below:
 3. Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 FAQ:
+
 The playbook file is filebeat-playbook.yml, copy it to /etc/ansible so it's available for use.
 
 Update the hosts.txt file to deermine which machines it will work with. The hosts.txt file should have the following format:
