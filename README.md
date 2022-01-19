@@ -84,6 +84,7 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 	Filebeat - data abut the file system
 	Metricbeat - machine metrics
+
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -97,7 +98,7 @@ FAQ:
 The playbook file is filebeat-playbook.yml, copy it to /etc/ansible so it's available for use.
 
 Update the hosts.txt file to deermine which machines it will work with. The hosts.txt file should have the following format:
-//
+```
 [webservers]
 10.0.0.0
 10.0.0.1
@@ -105,6 +106,6 @@ Update the hosts.txt file to deermine which machines it will work with. The host
 [elk]
 10.0.0.2
 EOF
-//
+```
 
 To check if ELK server is running, go to: http://[Host IP]/app/kibana#/home
